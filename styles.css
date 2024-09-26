@@ -4,9 +4,10 @@
   --primary-color: rgb(9, 154, 211);
   --primary-color-dark: rgba(26, 141, 187, 0.308);
   --secondary-color: rgb(9, 154, 211);
-  --text-dark: #1f2937;
-  --text-light: #6b7280;
+  --text-dark: white;
+  --text-light: black;
   --extra-light: lightblue;
+  --hover-color: white;
   --max-width: 1200px;
 }
 
@@ -29,7 +30,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(17, 103, 214, 0.705);
+  background-color: black;
   z-index: 99;
 }
 
@@ -45,7 +46,7 @@ nav {
 nav .logo a {
   font-size: 1.5rem;
   font-weight: 600;
-  color: black;
+  color: var(--hover-color);
   transition: 0.3s;
 }
 nav .logo a:hover {
@@ -85,7 +86,7 @@ ul li a {
 ul li a:hover {
   border-top-color: var(--secondary-color);
   border-bottom-color: var(--secondary-color);
-  color: var(--secondary-color);
+  color: var(--hover-color);
 }
 
 .section {
@@ -119,7 +120,7 @@ ul li a:hover {
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 3rem;
-  color: var(--text-dark);
+  color: var(--text-light);
   margin-bottom: 1rem;
 }
 
